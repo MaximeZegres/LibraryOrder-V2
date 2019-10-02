@@ -6,19 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryOrderCore.Data.Entities
 {
-    public class Book
+    public class Book : LibraryDTO.Book
     {
-        public int BookId { get; set; }
-
-        [Required]
-        public string Title { get; set; }
-
-        public string Author { get; set; }
-
-        public string Editor { get; set; }
-
-        [Required]
-        [StringLength(13)]
-        public string ISBN { get; set; }
     }
 }

@@ -6,22 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryOrderCore.Data.Entities
 {
-    public class Customer
+    public class Customer : LibraryDTO.Customer
     {
-        public int CustomerId { get; set; }
-
-        [Required]
-        [StringLength(200)]
-        public string FirstName { get; set; }
-
-        [Required]
-        [StringLength(200)]
-        public string LastName { get; set; }
-
-        public string Email { get; set; }
-
-        [Required]
-        [StringLength(10)]
-        public string PhoneNumber { get; set; }
     }
 }
