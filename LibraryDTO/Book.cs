@@ -9,6 +9,8 @@ namespace LibraryDTO
     {
         public int BookId { get; set; }
 
+        public int CustomerId { get; set; }
+
         [Required]
         public string Title { get; set; }
 

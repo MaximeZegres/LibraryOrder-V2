@@ -8,6 +8,8 @@ namespace LibraryDTO
     {
         public int OrderId { get; set; }
 
+        public int CustomerId { get; set; }
+
         public DateTime OrderDate { get; set; }
 
         public bool IsContacted { get; set; }
